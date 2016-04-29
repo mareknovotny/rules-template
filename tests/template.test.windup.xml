@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruletest  id="ruleset-unique-id-test" xmlns="http://windup.jboss.org/schema/jboss-ruleset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://windup.jboss.org/schema/jboss-ruleset http://windup.jboss.org/schema/jboss-ruleset/windup-jboss-ruleset.xsd">
+    <testDataPath>data</testDataPath>
+    <target>targetTechnology</target>
+    <ruleset>
+        <rules>
+            <!-- test rule for  ruleset-unique-id-00001 from template.windup.xml -->
+            <rule id="ruleset-unique-id-00001-test">
+                <when>
+                    <not>
+                        <!-- usually testing the result of the rule which is tested here -->
+                    </not>
+                </when>
+                <perform>
+                    <fail message="The result not found!"/>
+                </perform>
+            </rule>
+            <!-- test rule for  ruleset-unique-id-00002 from template.windup.xml -->
+            <rule id="ruleset-unique-id-00002-test">
+                <when>
+                    <not>
+                        <!-- usually testing the result of the rule which is tested here -->
+                    </not>
+                </when>
+                <perform>
+                    <fail message="The result not found!"/>
+                </perform>
+            </rule>
+        </rules>
+    </ruleset>
+</ruletest>
