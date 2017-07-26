@@ -2,6 +2,8 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xpath-default-namespace="http://windup.jboss.org/schema/jboss-ruleset" xmlns="http://windup.jboss.org/schema/jboss-ruleset">
 
     <!-- use a command for this testmaker generator  -->
+    <!--  http://xslttest.appspot.com/ working fine -->
+    <!-- xsltproc has got some issues to match templates - ?namespace issues? -->
     
     <!-- set the output -->
     <xsl:output method="xml" indent="yes" encoding="UTF-8" omit-xml-declaration="no"/>
@@ -13,7 +15,7 @@
             <testDataPath>data</testDataPath>
             <ruleset>
                 <rules>
-                    <xsl:apply-templates select="rule" />
+                    <xsl:apply-templates />
                 </rules>
             </ruleset>
         </ruletest>
@@ -61,6 +63,6 @@
                 <xsl:value-of select="./@message" />
             </xsl:attribute>
         </lineitem-exists>
-    </xsl:template>    
+    </xsl:template>
 
 </xsl:stylesheet> 
